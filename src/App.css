@@ -64,7 +64,8 @@ a{text-decoration: none;}
   .nav_div-menu{
     flex-grow: 0; 
     margin: 20.5px 30px; 
-    cursor: pointer;
+    cursor: pointer; 
+    
   }
   .icon-res{
     display: inline; 
