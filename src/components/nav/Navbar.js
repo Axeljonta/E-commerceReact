@@ -1,4 +1,4 @@
-import {BsCart4} from 'react-icons/bs'; 
+import CarWidget from './CarWidget'; 
 import {FaBars} from 'react-icons/fa'; 
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                <a className="nav_a-menu"><li className="nav_li-menu">Bebidas</li></a>
                <a className="nav_a-menu"><li className="nav_li-menu">Promos</li></a>
                <a className="nav_a-menu"><li className="nav_li-menu">Contacto</li></a> 
-               <a className="nav_a-menu"><li className="nav_li-menu icon"><BsCart4/></li></a> 
+               <a className="nav_a-menu"><CarWidget/></a> 
              </ul> 
             </div>
         </nav>
