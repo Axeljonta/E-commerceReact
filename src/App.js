@@ -8,8 +8,8 @@ import ItemCount from './components/ItemCount';
 function App() {
   return (
     <div className="App"> 
-    <Navbar></Navbar> 
-    <Container></Container> 
+    <Navbar/>
+    <Container/>
     <ItemCount stock='5' initial='1'/>
     <ItemCount stock='10' initial='1'/>
     <ItemCount stock='2' initial='1'/>
