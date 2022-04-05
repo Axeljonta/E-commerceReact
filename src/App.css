@@ -2,9 +2,18 @@
  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap'); 
  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
  /* ----------------Style nav-----------------------------------------------------*/
-@import './styles/navStyles.css';
+@import './styles/navStyles.css'; 
+/* ----------------Style itemlist-----------------------------------------------------*/
+@import './styles/ItemStyles.css';
 /*------------------Globals-------------------------------------------------------*/
-#root{font-family: 'Alata', sans-serif;}
+#root{
+  font-family: 'Alata', sans-serif; 
+  overflow: hidden; 
+} 
+button{
+  font-family: 'Alata', sans-serif;  
+  border: none;
+}
 li{list-style: none;}  
 a{text-decoration: none;} 
 /* -----------------Styles js----------------------------------------------------*/

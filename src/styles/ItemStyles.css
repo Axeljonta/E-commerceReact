@@ -1,0 +1,115 @@
+/* itemCount------------------- */
+.itemCount{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(225, 188, 255);
+}
+.itemc{
+    background-color: rgb(197, 197, 197);  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 8px; 
+    min-width: 10%;
+    max-width: 25%;
+ 
+} 
+.itemc-count{
+    background-color: white; 
+    border-radius: 8px; 
+    display: flex;
+    flex-flow: row nowrap; 
+    align-items: stretch;  
+}  
+.itemc-count span{
+padding: 0px 40px; 
+border-radius: 8px;
+font-size: 20px; 
+margin: 0px 4px;
+width: 8px; 
+}
+.itemc-count button{
+    font-size: 20px;  
+    background-color: white;
+    color: rgb(2, 2, 94); 
+    border-radius: 5px;
+    padding: 3px 8px;
+} 
+.itemc-count button:hover , .itemc-button-car:hover, .item-info:hover{
+    background-color:rgb(126, 178, 255);
+    transition-duration: 0.5s;  
+} 
+.itemc-button-car{
+   margin-top: 15px;
+   border-radius: 5px; 
+   font-size: 16px; 
+   padding: 5px 10px ;
+   width: 200%;
+}  
+/* Item------------------------------------------- */
+.item-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;  
+    max-width: 100%;
+}
+.item-img{ 
+    width: 100%;
+    border-radius: 5px;  
+    position: relative;
+} 
+.item-category{
+    text-align: center;   
+    opacity: 0;
+}   
+.item-div:hover .item-category{ 
+    opacity: 1;  
+    transition: 0.7s;
+}
+.item-category h4{
+    margin: 3px; 
+    padding: 5px 10px; 
+    font-size: 20px; 
+    background-color: white; 
+    box-shadow: 6px 7px 10px 4px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 7px 10px 4px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 7px 10px 4px rgba(0,0,0,0.53);  
+    position: absolute; 
+}
+.item-category-1{
+    top:80px; 
+    left: 20px;
+}
+.item-category-2{
+    top:10px; 
+    left: 20px;
+}
+.item-category-3{
+    top:150px; 
+    left: 20px;
+}  
+.item-info{
+    margin-top: 15px;
+   border-radius: 5px; 
+   font-size: 16px; 
+   padding: 5px 10px; 
+   width: 70%;
+}
+@media screen and (max-width: 850px){
+    .itemCount{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemc{
+        max-width: 60%; 
+    }
+    .item-div{
+        max-width: 100%;
+    }
+    .item-img{
+        width: 100%;
+    }
+}
