@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import customFetch from '../utils/customFecth' 
-import ItemList from "./itemList";
+import ItemDetail from "./itemDetail";
 const {product} = require('../utils/product')
 
-function ItemListContainer (){ 
+function ItemDetailContainer (){ 
     
-    const [bebidas, setBebidas] = useState([]); 
+    const [bebidas, setBebidas] = useState({}); 
 
         useEffect(() =>{ 
-            customFetch(2000, product) 
+            customFetch(2000, product[0]) 
             .then(res=>setBebidas(res)) 
             .catch(err => console.log(err));
         },[])
@@ -16,12 +16,10 @@ function ItemListContainer (){
 
     
     return( 
-        <div className='itemCount'> 
-          <ItemList date= {bebidas}/>
+        <div className="detailItemCont"> 
+          <ItemDetail data= {bebidas}/>
         </div>
     )
 }
 
-
-
-export default ItemListContainer;
+export default ItemDetailContainer

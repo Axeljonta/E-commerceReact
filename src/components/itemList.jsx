@@ -1,12 +1,11 @@
 import Item from './item'; 
 import ItemCount from './ItemCount';
 
-
 const itemList = ({date}) => { 
     return(
         <> 
         {
-        date.map(item => <div className='itemc'>
+        date.map(item => <div className='itemL'>
                               <Item key={item.id} name={item.name} price={item.price} img={item.img} category={item.category}/>
                               <ItemCount stock={item.stock} initial= {1}/>
                          </div>) 

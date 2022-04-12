@@ -1,11 +1,21 @@
 /* itemCount------------------- */
+.itemL{
+    background-color: rgb(197, 197, 197);  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 8px; 
+    min-width: 10%;
+    max-width: 25%;
+}
 .itemCount{
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: rgb(225, 188, 255);
+    background-color: rgb(121, 105, 160); 
 }
-.itemc{
+.itemL .itemc{
     background-color: rgb(197, 197, 197);  
     display: flex; 
     flex-direction: column;
@@ -16,32 +26,32 @@
     max-width: 25%;
  
 } 
-.itemc-count{
+.itemL .itemc-count{
     background-color: white; 
     border-radius: 8px; 
     display: flex;
     flex-flow: row nowrap; 
     align-items: stretch;  
 }  
-.itemc-count span{
+.itemL .itemc-count span{
 padding: 0px 40px; 
 border-radius: 8px;
 font-size: 20px; 
 margin: 0px 4px;
 width: 8px; 
 }
-.itemc-count button{
+.itemL .itemc-count button{
     font-size: 20px;  
     background-color: white;
     color: rgb(2, 2, 94); 
     border-radius: 5px;
     padding: 3px 8px;
 } 
-.itemc-count button:hover , .itemc-button-car:hover, .item-info:hover{
+.itemL .itemc-count button:hover , .itemL .itemc-button-car:hover,.itemL .item-info:hover{
     background-color:rgb(126, 178, 255);
     transition-duration: 0.5s;  
 } 
-.itemc-button-car{
+.itemL .itemc-button-car{
    margin-top: 15px;
    border-radius: 5px; 
    font-size: 16px; 

@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import {AiOutlinePlus, AiOutlineLine} from 'react-icons/ai'; 
 
-
 function ItemCount ({stock, initial}){ 
     const [data, setData] = useState(0); 
     
@@ -9,9 +8,7 @@ function ItemCount ({stock, initial}){
     useEffect (()=> {
         setData(initial);
     },[]);
-    //error en la linea 19 si solamente sumo uno en vez de sumer me lo suma como strig me aparece 01 y si aprieto devuelta 011, 0111,01111 por eso resto 1 y sumo 2 por que al restar no me sale el error, pero me gustaria saber que puedo hacer para arrglarlo o ver que estoy haciendo  mal 
     return( 
-        
         <div className='itemc'>
             <div className='itemc-count'>
                <button onClick={()=>{if (data > initial) setData(data-1)}}><AiOutlineLine/></button>
