@@ -15,6 +15,9 @@
 button{
   font-family: 'Alata', sans-serif;  
   border: none;
+} 
+.link{
+  color: white;
 }
 li{list-style: none;}  
 a{text-decoration: none;} 

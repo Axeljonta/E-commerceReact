@@ -14,8 +14,19 @@
     flex-flow: row wrap;
     justify-content: space-between;
     background-color: rgb(121, 105, 160); 
+    width: 100%;
 }
-.itemL .itemc{
+.itemL{
+    background-color: rgb(197, 197, 197);  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 8px; 
+    width: 30%;
+ 
+}
+.itemc{
     background-color: rgb(197, 197, 197);  
     display: flex; 
     flex-direction: column;
@@ -24,7 +35,6 @@
     border-radius: 8px; 
     min-width: 10%;
     max-width: 25%;
- 
 } 
 .itemL .itemc-count{
     background-color: white; 
@@ -54,9 +64,11 @@ width: 8px;
 .itemL .itemc-button-car{
    margin-top: 15px;
    border-radius: 5px; 
-   font-size: 16px; 
+   font-size: 20px; 
    padding: 5px 10px ;
    width: 200%;
+   background-color:rgb(2, 2, 94) ; 
+   color: white;
 }  
 /* Item------------------------------------------- */
 .item-div{
@@ -64,7 +76,7 @@ width: 8px;
     flex-direction: column;
     align-items: center; 
     position: relative;  
-    max-width: 100%;
+    width: 100%;
 }
 .item-img{ 
     width: 100%;
@@ -104,9 +116,13 @@ width: 8px;
 .item-info{
     margin-top: 15px;
    border-radius: 5px; 
-   font-size: 16px; 
+   font-size: 20px; 
    padding: 5px 10px; 
-   width: 70%;
+   width: 70%;  
+   text-align: center;
+   color: white;
+   background-color: rgb(2, 2, 94);
+
 }
 @media screen and (max-width: 850px){
     .itemCount{
