@@ -4,7 +4,9 @@
  /* ----------------Style nav-----------------------------------------------------*/
 @import './styles/navStyles.css'; 
 /* ----------------Style itemlist-----------------------------------------------------*/
-@import './styles/ItemStyles.css';
+@import './styles/ItemListStyles.css';
+/* ----------------Style itemdetail-----------------------------------------------------*/
+@import './styles/ItemDetailStyles.css';
 /*------------------Globals-------------------------------------------------------*/
 #root{
   font-family: 'Alata', sans-serif; 
@@ -13,6 +15,9 @@
 button{
   font-family: 'Alata', sans-serif;  
   border: none;
+} 
+.link{
+  color: white;
 }
 li{list-style: none;}  
 a{text-decoration: none;} 
