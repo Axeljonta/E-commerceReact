@@ -5,7 +5,7 @@ function ItemCount ({stock, initial}){
     const [data, setData] = useState(0); 
     
     //para que se ejecute solo la primera vez que se ejecute
-    useEffect (()=> {
+    useEffect (()=> { 
         setData(initial);
     },[]);
     return( 

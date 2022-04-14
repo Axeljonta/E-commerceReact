@@ -5,7 +5,9 @@ let ok = true;
                     if(ok){
                         res(task)
                     } 
-                    else{rej('error');}
+                    else{
+                        rej('error');
+                    }
                 },time)
             });
         }  

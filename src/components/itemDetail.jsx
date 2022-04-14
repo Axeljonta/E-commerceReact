@@ -3,7 +3,9 @@ import ItemCount from "./ItemCount"
 
 
 function ItemDetail ({data}){
-    return(<div className="detailItem">
+    return(<>
+          { data.img?
+            <div className="detailItem">
                 <img src={data.img} alt="producto" className="detailImg" /> 
                 <div className="detailText">
                   <h2>{data.name}</h2>
@@ -12,7 +14,9 @@ function ItemDetail ({data}){
                   <h4>A solo: ${data.price}</h4>
                   <ItemCount stock={data.stock} initial= {1}/> 
                 </div>
-            </div>
+            </div> : <p>Cargando...</p>
+           }
+           </>
           )
 } 
 export default ItemDetail

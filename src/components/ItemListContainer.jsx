@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import customFetch from '../utils/customFecth' 
 import ItemList from "./itemList";
+import customFetch from '../utils/customFecth'; 
 const {product} = require('../utils/product')
 
 function ItemListContainer (){ 
@@ -11,14 +11,16 @@ function ItemListContainer (){
             customFetch(2000, product) 
             .then(res=>setBebidas(res)) 
             .catch(err => console.log(err));
-        },[])
+        },[]);
     
 
     
     return( 
+        <>
         <div className='itemCount'> 
           <ItemList date= {bebidas}/>
         </div>
+        </>
     )
 }
 

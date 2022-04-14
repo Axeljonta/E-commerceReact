@@ -1,17 +1,13 @@
 import Item from './item'; 
 import ItemCount from './ItemCount';
 
-const itemList = ({date}) => { 
+const itemList = ({bebidas}) => { 
     return(
-        <> 
-        {
-        date.map(item => <div className='itemL'>
-                              <Item key={item.id} name={item.name} price={item.price} img={item.img} category={item.category}/>
-                              <ItemCount stock={item.stock} initial= {1}/>
-                         </div>) 
+        <div className='itemL'> 
+        {bebidas.length > 0?
+        bebidas.map(bebida => <Item key={bebida.id} name={bebida.name} price={bebida.price} img={bebida.img} category={bebida.categoryId}/>):<p>Cargando...</p> 
         } 
-        
-        </>
+        </div>
     )
 } 
 
