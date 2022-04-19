@@ -9,7 +9,7 @@ const Item = ({id,name,stock,price,category,img,}) => {
         <h4 className="item-category-2">{name}</h4>
         <h4 className="item-category-3">${price}</h4> 
       </div>  
-      <Link to={'/item/'+id} className=' item-info'>Informacion</Link>
+      <Link to={'/item/'+id} className=' item-info'>Comprar</Link>
     </div>)
 }
 

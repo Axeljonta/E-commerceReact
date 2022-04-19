@@ -1,4 +1,4 @@
-.detailItemCont .detailItem{
+.detailItem{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -14,7 +14,7 @@
     max-width: 50%; 
     margin-top: 30px;
 } 
-/* itemcount------------------------- */ 
+/* itemcount-------------------------*/ 
 .detailText .itemc{  
     display: flex; 
     flex-direction: column;
@@ -23,7 +23,7 @@
     border-radius: 8px;  
     background-color: white;
 }
-.detailText .itemc .itemc-count{
+.detailText .itemc .itemcCount{
     background-color: white; 
     border-radius: 8px; 
     display: flex;
@@ -32,25 +32,25 @@
     width: 100%;
     text-align: center;
 } 
-.detailText .itemc .itemc-count span{
+.detailText .itemc .itemcCount span{
     padding: 0px 40px; 
     border-radius: 8px;
     font-size: 30px; 
     margin: 0px 4px;
     width: 8px; 
 } 
-.detailText .itemc .itemc-count button{
+.detailText .itemc .itemcCount button{
     font-size: 30px;  
     background-color: white;
     color: rgb(2, 2, 94); 
     border-radius: 5px;
     padding: 3px 8px; 
 }
-.detailText .itemc .itemc-count button:hover,.detailText .itemc .itemc-button-car:hover,.detailText .itemc .item-info:hover{
+.detailText .itemc .itemcCount button:hover,.detailText .itemc .itemcButton-car:hover,.detailText .itemc .itemInfo:hover{
     background-color:rgb(126, 178, 255);
     transition-duration: 0.5s; 
 }
-.detailText .itemc .itemc-button-car{
+.detailText .itemc .itemcButtonCar{
     margin-top: 15px;
    border-radius: 5px; 
    font-size: 25px; 

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import customFetch from '../utils/customFecth' 
 import ItemDetail from "./itemDetail";
-import { useParams } from "react-router";
-const {product} = require('../utils/product')
+import { useParams } from "react-router"; 
+import style from './styles/ItemDetailStyles.module.css'
+const {product} = require('../utils/product') 
 
 function ItemDetailContainer (){ 
     
@@ -18,7 +19,7 @@ function ItemDetailContainer (){
 
     
     return( 
-        <div className="detailItemCont"> 
+        <div className={style.detailItemCont}> 
           <ItemDetail data= {bebidas}/>
         </div>
     )

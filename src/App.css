@@ -2,11 +2,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap'); 
  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
  /* ----------------Style nav-----------------------------------------------------*/
-@import './styles/navStyles.css'; 
+/* @import './components/styles/navStyles.css';  */
 /* ----------------Style itemlist-----------------------------------------------------*/
-@import './styles/ItemListStyles.css';
+@import './components/styles/ItemListStyles.css';
 /* ----------------Style itemdetail-----------------------------------------------------*/
-@import './styles/ItemDetailStyles.css';
+/* @import './styles/ItemDetailStyles.css'; */
 /*------------------Globals-------------------------------------------------------*/
 #root{
   font-family: 'Alata', sans-serif; 
