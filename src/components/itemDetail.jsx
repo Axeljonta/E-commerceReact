@@ -1,17 +1,22 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import ItemCount from "./ItemCount" 
 import style from './styles/ItemDetailStyles.module.css' 
 import Button from './ButtonCar'
+import { CartContext } from "./CartContex"
 
 
 
 function ItemDetail ({data}){
-    const [dataCount, setDataCount]= useState(0) 
-
-    const onAdd = (cant)=>{ 
-      alert(`Compraste ${cant} productos`)
-      setDataCount(cant)
-
+    
+  const [dataCount, setDataCount]= useState(0) 
+   
+  const test = useContext(CartContext)
+    
+  const onAdd = (cant)=>{
+      
+    setDataCount(cant) 
+      
+    test.addToCart(data,cant)
     }    
     return(<>{  
             data.img 

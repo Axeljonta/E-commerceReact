@@ -13,7 +13,7 @@ const Navbar = () => {
            </div>    
            <div className={styles.navDivMenu}> 
            <div className={`${styles.icon} ${styles.iconRes} ${styles.dpNone}`}>
-                <FaBars/>
+                {/* <FaBars/> */}
              </div>
              <ul className={styles.navUlMenu}>
                <Link to='/' className={`${styles.link} ${styles.navAMenu}`}><li className={styles.navLiMenu}>Inicio</li></Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
                <Link to='/category/2' className={`${styles.link} ${styles.navAMenu}`}><li className={styles.navLiMenu}>Espumantes</li></Link>
                <Link to='/category/4' className={`${styles.link} ${styles.navAMenu}`}><li className={styles.navLiMenu}>Vinos</li></Link> 
                <Link to='/category/3' className={`${styles.link} ${styles.navAMenu}`}><li className={styles.navLiMenu}>Cervezas</li></Link> 
-               <Link to='/' className={styles.navLiMenu}><CarWidget/></Link> 
+               <Link to='/cart' className={`${styles.navLiMenu} ${styles.link} ${styles.navAMenu}`}><CarWidget/></Link> 
              </ul>  
             </div>
         </nav>
