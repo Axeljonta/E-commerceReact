@@ -1,7 +1,7 @@
 .cartContainer{
     display:flex;
     flex-direction: row; 
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
 }
 .cartTitleCont{
@@ -15,7 +15,8 @@
     flex-direction: column; 
 }
 .cartProduct{
-    display: inline-flex;  
+    display: inline-flex;   
+    justify-content: space-between;
     background-color: rgb(218, 218, 218); 
     border-radius: 10px; 
     position: relative;
@@ -38,9 +39,16 @@
 
 .cartImg{
     width: 25%;
-    border-radius: 10px;
+    border-radius: 10px; 
+    flex-grow: 1;
 
 }
 .subTotal{
     max-width: 50%;
+} 
+.cartProductInf{ 
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 4;
 }
