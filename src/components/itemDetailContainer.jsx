@@ -13,7 +13,7 @@ function ItemDetailContainer (){
         firestoreFetchOne(idItem)
             .then(result => setBebidas(result))
             .catch(err => console.log(err))
-    }, [idItem]);
+    }, []);
     
 
     

@@ -7,8 +7,7 @@ const itemList = ({inf}) => {
         {
         inf.map(item => <div className='itemL'>
                               <Item key={item.id} id={item.id} name={item.name} price={item.price} img={item.img} category={item.category.name}/>
-                              
-                         </div>) 
+                        </div>) 
         } 
         </>
     )

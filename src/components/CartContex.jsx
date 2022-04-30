@@ -41,13 +41,17 @@ const deleteItem = (id) => {
     setCartList(result);
 }
 
+const removeList = () => {
+    setCartList([]);
+}
+
 const calcDataCant = () => {
     let cants = cartList.map(data => data.cantData);
     return cants.reduce(((a, b) => a + b), 0);
 }
     const[cartList, setCartList]= useState([])   
     return(
-        <CartContext.Provider value={{cartList, addToCart, deleteItem, calcSubTotal, calcTotalPerData, calcDataCant}}>
+        <CartContext.Provider value={{cartList, removeList, addToCart, deleteItem, calcSubTotal, calcTotalPerData, calcDataCant}}>
                 {children}
         </CartContext.Provider>
     )

@@ -1,14 +1,45 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContex";
-import styles from './styles/cartStyles.module.css'
-
+import styles from './styles/cartStyles.module.css';
+import { collection, doc, setDoc, serverTimestamp, updateDoc, increment} from 'firebase/firestore';
+import db from '../utils/firebaseConfig';
 
 
 function Cart() {
     const test = useContext(CartContext)
-    console.log('hola', test.cartList);
+
     let result = (a, b) => (a * b);
-    console.log(test.deleteItem);
+
+    const checkout = () =>{
+        let order = {
+            buyer: {
+                name:'Tu mama',
+                email:'tumama@gmail.com',
+                phone: '1132343536'
+            },
+            items:test.cartList.map(item => ({
+                id: item.idData,
+                title:item.nameData,
+                price: item.priceData,
+                cant:item.cant,
+            })),
+            date: serverTimestamp(), 
+            total:test.calcSubTotal(),
+        }
+
+        const createOrderInFirestore = async () => {
+            const newOrderRef = doc(collection(db, "orders"));
+            await setDoc(newOrderRef, order);
+            return newOrderRef;
+          }
+        
+          createOrderInFirestore()
+            .then(result => alert('Tu orden ya esta siendo procesada .\n\n\nID d la orden: ' + result.id + '\n\n'))
+            .catch(err => console.log(err));
+        
+          test.removeList();
+
+    }
     return (
         <div>
             <h2 className={styles.cartTitleCont}>Tus compras:</h2>
@@ -37,7 +68,8 @@ function Cart() {
                     { 
                     test.cartList.length > 0 && 
                     <h3>${test.calcSubTotal()}</h3>
-                    }
+                    } 
+                    <button onClick={checkout}>COMPRAR</button>
                 </div>
             </div>
         </div>
