@@ -1,24 +1,18 @@
 import { useState, useEffect } from "react";
-import customFetch from '../utils/customFecth' 
 import ItemList from "./itemList"; 
 import {useParams} from 'react-router'
-const {product} = require('../utils/product')
+import { firestoreFetch } from '../utils/fireFech'
 
 function ItemListContainer (){ 
     
     const [bebidas, setBebidas] = useState([]);  
     const {idCategory}= useParams();
-
-        useEffect(() =>{ 
-            customFetch(2000, product.filter(item=>{if (idCategory === undefined) return item;
-                return item.categoryId === parseInt(idCategory)
-            })) 
-            .then(res=>setBebidas(res)) 
+ 
+    useEffect(() => {
+        firestoreFetch(idCategory)
+            .then(result => setBebidas(result))
             .catch(err => console.log(err));
-        },[bebidas]);
-    
-
-    
+    }, [idCategory]);
     return( 
         <>
         <div className='itemCount'> 
