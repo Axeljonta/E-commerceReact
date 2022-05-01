@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const Item = ({id,name,price,category,img,}) => {
-  console.log(img)  
+  
   return(
     <div className="item-div">
       <img className="item-img" src={img} alt="producto"/>

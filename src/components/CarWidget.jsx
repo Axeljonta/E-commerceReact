@@ -6,8 +6,8 @@ import { CartContext } from "./CartContex";
 
 function CarWidget (){
     const test = useContext(CartContext);  
-    const [cants, setcants] = useState(0);  
-    console.log(test.calcDataCant());
+    const [cants, setcants] = useState(0);
+    
     
     //para que se ejecute solo la primera vez que se ejecute
     useEffect (()=> { 

@@ -1,5 +1,4 @@
 import CarWidget from './CarWidget'; 
-import {FaBars} from 'react-icons/fa'; 
 import { Link } from "react-router-dom"; 
 import styles from './styles/navStyles.module.css'
 
