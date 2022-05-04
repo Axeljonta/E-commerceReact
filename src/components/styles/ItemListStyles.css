@@ -1,31 +1,22 @@
 /* itemCount------------------- */
-.itemL{
-    background-color: rgb(197, 197, 197);  
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-    border-radius: 8px; 
-    min-width: 10%;
-    max-width: 25%;
-}
 .itemCount{
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: rgb(121, 105, 160); 
+    background-color: rgb(221, 221, 221); 
     width: 100%;
 }
-.itemL{
-    background-color: rgb(197, 197, 197);  
+.itemL{ 
+    background-color: rgb(255, 255, 255);
     display: flex; 
     flex-direction: column;
     align-items: center;
     margin: 30px;
     border-radius: 8px; 
-    width: 30%;
- 
-}
+    width: 30%; 
+    min-width: 10%;
+    max-width: 25%;
+ }
 .itemc{
     background-color: rgb(197, 197, 197);  
     display: flex; 
@@ -75,7 +66,9 @@ width: 8px;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    position: relative;  
+    position: relative; 
+    border-radius: 8px;
+    overflow: hidden;
     width: 100%;
 }
 .item-img{ 
@@ -114,11 +107,9 @@ width: 8px;
     left: 20px;
 }  
 .item-info{
-    margin-top: 15px;
-   border-radius: 5px; 
    font-size: 20px; 
-   padding: 5px 10px; 
-   width: 70%;  
+   padding: 15px 10px; 
+   width: 100%;  
    text-align: center;
    color: white;
    background-color: rgb(2, 2, 94);
@@ -126,16 +117,109 @@ width: 8px;
 }
 @media screen and (max-width: 850px){
     .itemCount{
-        flex-direction: column;
+        display: flex; 
+        flex-flow: column;
         align-items: center;
-    }
-    .itemc{
-        max-width: 60%; 
-    }
-    .item-div{
-        max-width: 100%;
-    }
-    .item-img{
+        background-color: rgb(221, 221, 221); 
         width: 100%;
     }
+    .itemL{ 
+        background-color: rgb(255, 255, 255);
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin: 8px 5px;
+        border-radius: 8px; 
+        width: 100%;
+        min-width: 90%;
+        max-width: 90%;
+     }
+
+    .itemL .itemc-count{
+        background-color: white; 
+        border-radius: 8px; 
+        display: flex;
+        flex-flow: row nowrap; 
+        align-items: stretch;  
+    }  
+    .itemL .itemc-count span{
+    padding: 0px 40px; 
+    border-radius: 8px;
+    font-size: 20px; 
+    margin: 0px 4px;
+    width: 8px; 
+    }
+    .itemL .itemc-count button{
+        font-size: 20px;  
+        background-color: white;
+        color: rgb(2, 2, 94); 
+        border-radius: 5px;
+        padding: 3px 8px;
+    } 
+    .itemL .itemc-count button:hover , .itemL .itemc-button-car:hover,.itemL .item-info:hover{
+        background-color:rgb(126, 178, 255);
+        transition-duration: 0.5s;  
+    } 
+    .itemL .itemc-button-car{
+       margin-top: 15px;
+       border-radius: 5px; 
+       font-size: 20px; 
+       padding: 5px 10px ;
+       width: 200%;
+       background-color:rgb(2, 2, 94) ; 
+       color: white;
+    }  
+    /* Item------------------------------------------- */
+    .item-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        position: relative; 
+        border-radius: 8px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .item-img{ 
+        width: 30%;
+        border-radius: 5px;  
+        position: relative;
+    } 
+    .item-category{
+        text-align: left;   
+        padding-right: 30px; 
+        opacity: 1;
+    }   
+    .item-div:hover .item-category{  
+        transition: none;
+    }
+    .item-category h4{
+        margin: 3px; 
+        padding: 2px 0px; 
+        font-size: 14px; 
+        background-color: none; 
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        position: relative;
+    }
+    .item-category-1{
+        top:0px; 
+        left: 0px;
+    }
+    .item-category-2{
+        top:0px; 
+        left:0px;
+    }
+    .item-category-3{
+        top:0px; 
+        left:0px;
+    }  
+    .item-info{
+       font-size: 20px; 
+       padding: 15px 10px; 
+       width: 100%;  
+       text-align: right;
+       color: rgb(2, 2, 94);
+       background-color: white;
+    }    
 }

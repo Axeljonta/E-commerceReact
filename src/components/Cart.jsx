@@ -67,12 +67,12 @@ function Cart() {
                 <h2>sin productos</h2>}
              </div>
              <div className={styles.subTotal}>
-                <h2> Total a pagar:</h2> 
+                <h2 className={styles.subTotalH2}> Total a pagar:</h2> 
                  { 
                   test.cartList.length > 0 && 
                   <h3>${test.calcSubTotal()}</h3>
                  } 
-                <button onClick={checkout}>COMPRAR</button>
+                <button className={styles.subButton} onClick={checkout}>COMPRAR</button>
              </div>
             </div>
         </div>
