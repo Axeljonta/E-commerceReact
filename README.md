@@ -1,3 +1,4 @@
+![Image text](https://github.com/Axeljonta/E-commerceReact/blob/main/src/utils/Captura.PNG)
 # Chupy bebidas
 
 Chupy, un e-commerce de bebidas, dessarrolado durante el curso de react
